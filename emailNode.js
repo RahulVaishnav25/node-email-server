@@ -19,7 +19,7 @@ var transporter = nodemailer.createTransport({
 });
 var mailOptions = {
     from: 'rahulvaishnav166@gmail.com',
-    to: 'nekvinder@gmail.com',
+    to: 'sales@karnex.in',
     subject: 'New Query at Karnex',
 };
 
