@@ -7,4 +7,4 @@ ssh -i $KEY_PATH ubuntu@$AWS_IP 'sudo apt install npm;sudo npm install pm2@lates
 curl --insecure -v -k --key $KEY_PATH sftp://ubuntu@$AWS_IP/opt/karnexMailServer/emailNode.js -T "emailNode.js"
 curl --insecure -v -k --key $KEY_PATH sftp://ubuntu@$AWS_IP/opt/karnexMailServer/package.json -T "package.json"
 # curl --insecure -v -k --key $KEY_PATH sftp://ubuntu@$AWS_IP/opt/kumoroMailServer/pm2runConfig.json -T "pm2runConfig.json"
-ssh -i $KEY_PATH ubuntu@$AWS_IP 'cd /opt/karnexMailServer/;npm i;sudo pm2 start emailNode.js'
+ssh -i $KEY_PATH ubuntu@$AWS_IP 'cd /opt/karnexMailServer/;npm i;pm2 start emailNode.js; emailNode.js'
