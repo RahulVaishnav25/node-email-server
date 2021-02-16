@@ -13,14 +13,14 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'rahulvaishnav166@gmail.com',
-        pass: 'khstztmjxbpjztcc'
+        user: '*****************@gmail.com',
+        pass: '****************'
     }
 });
 var mailOptions = {
-    from: 'rahulvaishnav166@gmail.com',
-    to: 'sales@karnex.in',
-    subject: 'New Query at Karnex',
+    from: '****************@gmail.com',
+    to: 'target@domain.in',
+    subject: 'New Query at company',
 };
 
 app.use(bodyParser.urlencoded({
